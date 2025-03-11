@@ -7,7 +7,7 @@
     "light": "#2c5282",
     "dark": "#1a365d"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/blog-logo.png",
   "navigation": {
 
     "tabs": [
@@ -100,24 +100,24 @@
     "links": [
       {
         "label": "Newsletter",
-        "href": "samuelomenogor33@gmail.com"
+        "href": "mailto:samuelomenogor33@gmail.com"
       },
       {
         "label": "Support",
-        "href": "/resources"
+        "href": "mailto:samuelomenogor33@gmail.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Latest Post",
-      "href": "/latest"
+      "href": "mailto:samuelomenogor33@gmail.com"
     }
   },
   "footer": {
     "socials": {
-      "x": "xxx",
-      "github": "xxx",
-      "linkedin": "xxx"
+      "x": "https://x.com/Realsam0101",
+      "github": "https://github.com/omenogor01/docs/tree/main",
+      "linkedin": "https://www.linkedin.com/in/samuel-omenogor-a8514125a/"
     }
   }
 }
