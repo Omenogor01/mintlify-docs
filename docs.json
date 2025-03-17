@@ -9,7 +9,6 @@
   },
   "favicon": "/blog-logo.png",
   "navigation": {
-
     "tabs": [
       {
         "tab": "Blog",
@@ -36,7 +35,7 @@
             "pages": [
               "blog/advanced/email-authentication",
               "blog/advanced/bulk-email-best-practices",
-              "ablogdvanced/email-encryption-methods"   
+              "blog/advanced/email-encryption-methods"
             ]
           },
           {
@@ -70,174 +69,46 @@
         ]
       },
       {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Core Protocols",
-                "pages": [
-                  "blog/email-basics/smtp-deepdive",
-                  "blog/email-basics/imap-vs-pop3",
-                  "blog/email-basics/mta-architecture"
-                ]
-              },
-              {
-                "group": "Security Mastery",
-                "pages": [
-                  "blog/dns-guides/dmarc-implementation",
-                  "blog/advanced/tls-encryption",
-                  "blog/case-studies/phishing-prevention"
-               ]
-              }
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Core Protocols",
+            "pages": [
+              "blog/email-basics/smtp-deepdive",
+              "blog/email-basics/imap-vs-pop3",
+              "blog/email-basics/mta-architecture"
             ]
           },
           {
-           "tab": "Labs",
-            "groups": [
-              {
-                "group": "Interactive Tools",
-                "pages": [
-                  "labs/dns-validator",
-                  "labs/email-headers",
-                  "labs/spam-score-checker"  
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Guides",
-             "groups": [
-              {
-                "group": "DNS Configuration",
-                "pages": [
-                  "blog/dns-guides/understanding-spf",
-                  "blog/dns-guides/dkim-setup",
-                  "blog/dns-guides/implementing-dmarc"
-                ]
-              },
-              {
-                "group": "Enterprise Solutions",
-                "pages": [
-                  "blog/enterprise/enterprise-dmarc",
-                  "blog/deliverability/postfix-config"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Academy",
-            "groups": [
-              {
-                "group": "Courses",
-                "pages": [
-                  "courses/deliverability-101",
-                  "courses/advanced-dmarc"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Core Protocols",
-                "pages": [
-                  "blog/dns-guides/understanding-spf",
-                  "blog/dns-guides/dkim-setup",
-                  "blog/dns-guides/implementing-dmarc"
-                ]
-              },
-              {
-                "group": "Server Configuration",
-                "pages": [
-                  "blog/deliverability/postfix-config",
-                  "blog/enterprise/enterprise-dmarc"    
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Foundation",
-            "groups": [
-              {
-                "group": "Authentication",
-                "pages": [
-                  "understanding-spf",
-                  "configuring-dkim",
-                  "implementing-dmarc"
-                ]
-              },
-              {
-                "group": "Delivery",
-                "pages": [
-                  "inbox-placement",
-                  "postfix-config",
-                  "advanced-deliverability-tips"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Core Protocols",
-                "pages": [
-                  "blog/email-basics/smtp-deepdive",
-                  "blog/email-basics/imap-vs-pop3",
-                  "blog/email-basics/mta-architecture"
-                ]
-              },
-              {
-                "group": "Security Mastery",
-                "pages": [
-                  "blog/dns-guides/dmarc-implementation",
-                  "blog/advanced/tls-encryption",
-                  "blog/case-studies/phishing-prevention"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Labs",
-            "groups": [
-              {
-                "group": "Interactive Tools",
-                "pages": [
-                  "labs/dns-validator",
-                  "labs/email-headers",
-                  "labs/spam-score-checker"
-                ]
-              }
+            "group": "Security Mastery",
+            "pages": [
+              "blog/dns-guides/dmarc-implementation",
+              "blog/advanced/tls-encryption",
+              "blog/case-studies/phishing-prevention"
             ]
           }
         ]
       },
-      "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+      {
+        "tab": "Labs",
+        "groups": [
+          {
+            "group": "Interactive Tools",
+            "pages": [
+              "labs/dns-validator",
+              "labs/email-headers",
+              "labs/spam-score-checker"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
     "href": "https://omen-og-or.com"
   },
-  
   "navbar": {
     "links": [
       {
@@ -261,6 +132,22 @@
       "github": "https://github.com/omenogor01/docs/tree/main",
       "linkedin": "https://www.linkedin.com/in/samuel-omenogor-a8514125a/"
     }
-  }
-      }
+  },
+  "anchors": [
+    {
+      "icon": "book-open-cover",
+      "name": "Documentation",
+      "url": "/docs"
+    },
+    {
+      "icon": "slack",
+      "name": "Community",
+      "url": "/community"
+    },
+    {
+      "icon": "newspaper",
+      "name": "Blog",
+      "url": "/blog"
     }
+  ]
+}
