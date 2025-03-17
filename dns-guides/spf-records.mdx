@@ -1,0 +1,24 @@
+---
+title: "Understanding SPF Records: The First Line of Email Defense"
+description: "Comprehensive guide to Sender Policy Framework (SPF) records and their role in email authentication"
+date: "2024-03-15"
+author: "Email Security Team"
+---
+
+# SPF Records Demystified
+
+Sender Policy Framework (SPF) is an essential email authentication method that helps prevent spoofing and phishing attacks. Let's break down how it works:
+
+## Why SPF Matters
+<CardGroup cols={2}>
+  <Card icon="shield" title="Spam Prevention">
+    Reduces chances of your emails being marked as spam
+  </Card>
+  <Card icon="user-shield" title="Domain Protection">
+    Prevents unauthorized senders from using your domain
+  </Card>
+</CardGroup>
+
+## SPF Record Syntax
+```dns
+v=spf1 include:_spf.google.com ~all

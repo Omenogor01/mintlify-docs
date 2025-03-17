@@ -1,0 +1,37 @@
+---
+title: "Enterprise DMARC Implementation: A Step-by-Step Guide"
+date: "2024-03-28"
+author:
+  name: "Samuel Omenz"
+  role: "Email Security Architect"
+  avatar: "/assets/images/authors/samuel-omenz.jpg"
+  bio: "15+ years experience in email infrastructure security. Contributor to IETF RFC 7489 (DMARC)."
+  socials:
+    twitter: "https://twitter.com/omenz_sec"
+    linkedIn: "https://linkedin.com/in/samuel-omenz"
+tags: ["dmarc", "email-security", "dns"]
+---
+
+import { InteractiveLab, EmailSignup } from '../../components/blog/Components'
+
+## Why DMARC Matters
+
+<CardGroup cols={2}>
+  <Card icon="shield-check" title="Phishing Protection">
+    Reduces spoofing attempts by 92% according to APWG reports
+  </Card>
+  <Card icon="chart-line" title="Delivery Rates">
+    Improves inbox placement by 15-20% for legitimate senders
+  </Card>
+</CardGroup>
+
+## Implementation Checklist
+
+1. **Baseline Monitoring** (p=none)
+2. **Gradual Enforcement** (p=quarantine)
+3. **Full Enforcement** (p=reject)
+4. **Continuous Monitoring**
+
+```dns
+v=DMARC1; p=reject; rua=mailto:dmarc-reports@omen-og-or.com;
+ruf=mailto:dmarc-forensics@omen-og-or.com; adkim=s; aspf=s;

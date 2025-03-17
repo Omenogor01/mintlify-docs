@@ -1,0 +1,21 @@
+---
+
+### **understanding-spf.mdx**
+```mdx
+---
+title: "SPF Record Mastery"
+date: "2024-04-05"
+author: 
+  name: "David Wilson"
+  role: "DNS Specialist"
+  avatar: "/images/authors/david-wilson.jpg"
+---
+
+import { CardGroup, Card } from '../../components/blog/Components'
+
+# Sender Policy Framework Essentials
+
+## SPF Record Components
+
+```dns
+v=spf1 include:_spf.google.com include:servers.mcsv.net -all

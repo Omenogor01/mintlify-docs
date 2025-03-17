@@ -1,0 +1,33 @@
+---
+title: "DMARC Implementation Checklist"
+date: "2024-04-04"
+author: 
+  name: "Sophia Müller"
+  role: "Email Security Consultant"
+  avatar: "/assets/images/sophia-muller.jpg"
+---
+
+import { Steps, Quiz } from '../../components/blog/Components'
+
+# DMARC Deployment Roadmap
+
+<Steps>
+  <Step title="1. Policy Setup">
+    ```dns
+    _dmarc IN TXT "v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com;"
+    ```
+  </Step>
+  
+  <Step title="2. Monitoring">
+    Analyze reports weekly using tools like:
+    - Dmarcian
+    - Valimail
+  </Step>
+</Steps>
+
+## Compliance Quiz
+<Quiz
+  question="What's the recommended phase duration for p=none?"
+  options={["1-2 weeks", "4-8 weeks", "6-12 months"]}
+  correctAnswer="4-8 weeks"
+/>
