@@ -101,6 +101,37 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Academy",
+        "groups": [
+          {
+            "group": "Courses",
+            "pages": [
+              "courses/deliverability-101",
+              "courses/advanced-dmarc"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "href": "https://mintlify.com/docs",
+        "icon": "book-open-cover"
+      },
+      {
+        "anchor": "Community",
+        "href": "https://mintlify.com/community",
+        "icon": "slack"
+      },
+      {
+        "anchor": "Blog",
+        "href": "https://mintlify.com/blog",
+        "icon": "newspaper"
       }
     ]
   },
@@ -132,22 +163,5 @@
       "github": "https://github.com/omenogor01/docs/tree/main",
       "linkedin": "https://www.linkedin.com/in/samuel-omenogor-a8514125a/"
     }
-  },
-  "anchors": [
-    {
-      "icon": "book-open-cover",
-      "name": "Documentation",
-      "url": "/docs"
-    },
-    {
-      "icon": "slack",
-      "name": "Community",
-      "url": "/community"
-    },
-    {
-      "icon": "newspaper",
-      "name": "Blog",
-      "url": "/blog"
-    }
-  ]
+  }
 }
