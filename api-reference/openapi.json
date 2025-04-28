@@ -1,0 +1,195 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "OpenAPI Plant Store",
+    "description": "Explore the OpenAPI Plant Store API, a sample API demonstrating RESTful features for managing plants. Learn how to retrieve, create, and delete plant records with detailed schema definitions and error handling.",
+    "version": "1.0.0",
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://sandbox.mintlify.com",
+      "description": "Sandbox environment for testing the Plant Store API"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/plants": {
+      "get": {
+        "summary": "Retrieve All Plants",
+        "description": "Fetch a list of all plants accessible to the user. Supports pagination and filtering.",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "The maximum number of results to return",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of plants",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Plant"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a New Plant",
+        "description": "Add a new plant to the store by providing its details in the request body.",
+        "requestBody": {
+          "description": "Details of the plant to be added",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPlant"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The newly created plant",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plant"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/plants/{id}": {
+      "delete": {
+        "summary": "Delete a Plant",
+        "description": "Remove a plant from the store by specifying its unique ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The unique ID of the plant to delete",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Plant successfully deleted",
+            "content": {}
+          },
+          "400": {
+            "description": "Invalid plant ID",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Plant": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the plant"
+          },
+          "tag": {
+            "type": "string",
+            "description": "Tag specifying the type of plant"
+          }
+        }
+      },
+      "NewPlant": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Plant"
+          },
+          {
+            "type": "object",
+            "required": ["id"],
+            "properties": {
+              "id": {
+                "type": "integer",
+                "format": "int64",
+                "description": "The unique ID of the plant"
+              }
+            }
+          }
+        ]
+      },
+      "Error": {
+        "type": "object",
+        "required": ["error", "message"],
+        "properties": {
+          "error": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Error code"
+          },
+          "message": {
+            "type": "string",
+            "description": "Detailed error message"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Use a Bearer token for authentication"
+      }
+    }
+  }
+}

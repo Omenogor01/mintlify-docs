@@ -1,0 +1,113 @@
+/* 
+  Custom Styles for Mintlify Documentation
+  Description: Enhance the visual appeal and usability of your documentation with custom styles. 
+  This file includes styles for typography, layout, navigation, and responsiveness.
+  Author: Your Name
+  Last Updated: 2025-04-29
+*/
+
+/* General Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1em;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  margin-right: 1em;
+}
+
+.navbar a:hover {
+  color: #3498db;
+}
+
+/* Buttons */
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Code Blocks */
+pre, code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 0.5em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+pre {
+  margin: 1.5em 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75em;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
