@@ -4,18 +4,59 @@
 ```mdx
 ---
 title: "SPF Record Mastery"
+description: "Master the Sender Policy Framework (SPF) to secure your domain and improve email deliverability. Learn SPF syntax, components, and best practices for DNS configuration."
 date: "2024-04-05"
 author: 
   name: "David Wilson"
   role: "DNS Specialist"
   avatar: "/images/authors/david-wilson.jpg"
----
+tags:
+  - "SPF"
+  - "DNS"
+  - "email authentication"
+  - "email security"
+  - "deliverability"
+icon: "dns"
 
-import { CardGroup, Card } from '../../components/blog/Components'
+content:
+  introduction: |
+    Sender Policy Framework (SPF) is a critical email authentication protocol that helps prevent spoofing and phishing attacks. By configuring SPF records in your DNS, you can specify which mail servers are authorized to send emails on behalf of your domain.
+  components:
+    - title: "SPF Record Components"
+      description: |
+        An SPF record is a DNS TXT record that defines the mail servers authorized to send emails for your domain. Below is an example of a basic SPF record:
+      code: |
+        ```dns
+        v=spf1 include:_spf.google.com include:servers.mcsv.net -all
+        ```
+      explanation:
+        - "v=spf1: Specifies the version of SPF being used."
+        - "include:_spf.google.com: Authorizes Google’s mail servers to send emails on behalf of your domain."
+        - "include:servers.mcsv.net: Authorizes Mailchimp’s servers to send emails."
+        - "-all: Indicates a hard fail for unauthorized servers. Emails from unauthorized servers will be rejected."
 
-# Sender Policy Framework Essentials
+bestPractices:
+  - "Keep SPF records simple to avoid exceeding the DNS lookup limit (10 lookups)."
+  - "Use '-all' for enforcement after testing with '~all' (soft fail)."
+  - "Combine SPF with DKIM and DMARC for comprehensive email authentication."
+  - "Monitor SPF results using DMARC reports to identify and resolve issues."
 
-## SPF Record Components
+seo:
+  title: "SPF Record Mastery: A Comprehensive Guide"
+  description: "Learn how to configure SPF records to secure your domain and improve email deliverability. This guide covers SPF syntax, components, and best practices for DNS configuration."
+  keywords:
+    - "SPF"
+    - "DNS configuration"
+    - "email authentication"
+    - "email security"
+    - "deliverability"
+  openGraph:
+    type: "article"
+    url: "https://yourdomain.com/blog/spf-record-mastery"
+    image: "/images/authors/david-wilson.jpg"
 
-```dns
-v=spf1 include:_spf.google.com include:servers.mcsv.net -all
+cta:
+  text: "Ready to secure your domain with SPF?"
+  button:
+    label: "Learn More"
+    href: "/guides/spf-configuration"

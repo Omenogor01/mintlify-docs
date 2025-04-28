@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Email Insights Blog",
+  "version": "1.0.0",
   "colors": {
     "primary": "#1a365d",
     "light": "#2c5282",
@@ -9,42 +10,18 @@
   },
   "favicon": "/blog-logo.png",
   "navigation": {
-
     "tabs": [
       {
-        "tab": "Blog",
+        "tab": "Docs",
         "groups": [
           {
-            "group": "Email Fundamentals",
+            "group": "Getting Started",
             "pages": [
-              "blog/email-basics/how-email-works",
-              "blog/email-basics/protocols-explained",
-              "blog/email-basics/email-security-101"
-            ]
-          },
-          {
-            "group": "DNS & Deliverability",
-            "pages": [
-              "blog/dns-guides/spf-records",
-              "blog/dns-guides/dkim-setup",
-              "blog/dns-guides/dmarc-implementation",
-              "blog/dns-guides/inbox-placement"
-            ]
-          },
-          {
-            "group": "Advanced Topics",
-            "pages": [
-              "blog/advanced/email-authentication",
-              "blog/advanced/bulk-email-best-practices",
-              "blog/advanced/email-encryption-methods"
-            ]
-          },
-          {
-            "group": "Tools & Resources",
-            "pages": [
-              "blog/tools/dns-lookup-tools",
-              "blog/tools/email-testing-guide",
-              "blog/tools/open-source-alternatives"
+              "quickstart",
+              {
+                "group": "Nested Reference Pages",
+                "pages": ["nested-reference-page"]
+              }
             ]
           }
         ]
@@ -54,9 +31,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
@@ -143,19 +118,15 @@
   },
   "navbar": {
     "links": [
-      {
-        "label": "Newsletter",
-        "href": "mailto:samuelomenogor33@gmail.com"
-      },
-      {
-        "label": "Support",
-        "href": "mailto:samuelomenogor33@gmail.com"
-      }
+      { "label": "Categories", "href": "/categories", "dropdown": true },
+      { "label": "Tags", "href": "/tags" },
+      { "label": "Newsletter", "href": "mailto:samuelomenogor33@gmail.com" },
+      { "label": "Support", "href": "mailto:samuelomenogor33@gmail.com" }
     ],
     "primary": {
       "type": "button",
       "label": "Latest Post",
-      "href": "mailto:samuelomenogor33@gmail.com"
+      "href": "/blog/latest"
     }
   },
   "footer": {
@@ -163,6 +134,69 @@
       "x": "https://x.com/Realsam0101",
       "github": "https://github.com/omenogor01/docs/tree/main",
       "linkedin": "https://www.linkedin.com/in/samuel-omenogor-a8514125a/"
+    },
+    "quickLinks": [
+      { "label": "About", "href": "/about" },
+      { "label": "Privacy Policy", "href": "/privacy-policy" },
+      { "label": "Contact", "href": "/contact" },
+      { "label": "Sitemap", "href": "/sitemap" }
+    ],
+    "legal": {
+      "termsOfService": "/terms-of-service",
+      "privacyPolicy": "/privacy-policy"
     }
+  },
+  "homepage": {
+    "featured": [
+      "blog/email-basics/how-email-works",
+      "blog/dns-guides/spf-records",
+      "blog/advanced/email-authentication"
+    ],
+    "recentPosts": true,
+    "trending": [
+      "blog/advanced/bulk-email-best-practices",
+      "blog/dns-guides/dkim-setup"
+    ],
+    "cta": {
+      "text": "Subscribe to our newsletter for the latest updates!",
+      "button": {
+        "label": "Subscribe",
+        "href": "/subscribe"
+      }
+    }
+  },
+  "seo": {
+    "title": "Email Insights Blog",
+    "description": "Learn everything about email fundamentals, DNS, and advanced email topics.",
+    "keywords": ["email", "DNS", "deliverability", "blog"],
+    "openGraph": {
+      "type": "website",
+      "url": "https://omen-og-or.com",
+      "image": "/blog-logo.png"
+    }
+  },
+  "analytics": {
+    "providers": [
+      {
+        "name": "GoogleAnalytics",
+        "trackingId": "UA-12345678-1"
+      },
+      {
+        "name": "Plausible",
+        "trackingId": "plausible-site-id"
+      }
+    ]
+  },
+  "accessibility": {
+    "darkMode": true,
+    "altText": true
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en", "es", "fr", "de"]
+  },
+  "performance": {
+    "lazyLoadImages": true,
+    "cacheDuration": "1h"
   }
 }
