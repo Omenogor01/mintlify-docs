@@ -1,0 +1,31 @@
+{
+  "title": "Willkommen bei unserer Dokumentation",
+  "description": "Erfahren Sie mehr über unsere Produkte und Dienstleistungen. Unsere Dokumentation bietet umfassende Anleitungen, Tutorials und Ressourcen, um Ihnen zu helfen.",
+  "navigation": {
+    "home": "Startseite",
+    "docs": "Dokumentation",
+    "guides": "Anleitungen",
+    "contact": "Kontakt",
+    "about": "Über uns"
+  },
+  "footer": {
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "cta": {
+    "learnMore": "Erfahren Sie mehr",
+    "getStarted": "Jetzt starten",
+    "contactSupport": "Support kontaktieren"
+  },
+  "errors": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "description": "Die von Ihnen gesuchte Seite existiert nicht. Überprüfen Sie die URL oder kehren Sie zur Startseite zurück."
+    },
+    "500": {
+      "title": "Interner Serverfehler",
+      "description": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie den Support."
+    }
+  }
+}

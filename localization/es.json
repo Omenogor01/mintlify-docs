@@ -1,0 +1,40 @@
+{
+  "homepage": {
+    "title": "Bienvenido a Nuestra Documentación",
+    "description": "Descubre guías detalladas, tutoriales y recursos para aprovechar al máximo nuestros productos y servicios.",
+    "cta": "¡Suscríbete a nuestro boletín para recibir las últimas actualizaciones!",
+    "features": {
+      "title": "¿Por qué elegirnos?",
+      "feature1": "Guías completas",
+      "feature2": "Tutoriales paso a paso",
+      "feature3": "Soporte experto"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "docs": "Documentación",
+    "guides": "Guías",
+    "contact": "Contacto",
+    "about": "Sobre Nosotros"
+  },
+  "footer": {
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos del Servicio",
+    "contactUs": "Contáctanos"
+  },
+  "cta": {
+    "learnMore": "Aprende Más",
+    "getStarted": "Comienza Ahora",
+    "contactSupport": "Contactar Soporte"
+  },
+  "errors": {
+    "404": {
+      "title": "Página No Encontrada",
+      "description": "La página que buscas no existe. Verifica la URL o regresa a la página de inicio."
+    },
+    "500": {
+      "title": "Error Interno del Servidor",
+      "description": "Algo salió mal en nuestro lado. Por favor, inténtalo de nuevo más tarde o contacta al soporte."
+    }
+  }
+}

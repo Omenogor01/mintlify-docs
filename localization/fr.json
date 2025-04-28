@@ -1,0 +1,40 @@
+{
+  "homepage": {
+    "title": "Bienvenue dans Notre Documentation",
+    "description": "Découvrez des guides détaillés, des tutoriels et des ressources pour tirer le meilleur parti de nos produits et services.",
+    "cta": "Abonnez-vous à notre newsletter pour recevoir les dernières mises à jour !",
+    "features": {
+      "title": "Pourquoi Nous Choisir ?",
+      "feature1": "Guides complets",
+      "feature2": "Tutoriels étape par étape",
+      "feature3": "Support expert"
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "docs": "Documentation",
+    "guides": "Guides",
+    "contact": "Contact",
+    "about": "À Propos"
+  },
+  "footer": {
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation",
+    "contactUs": "Nous Contacter"
+  },
+  "cta": {
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer",
+    "contactSupport": "Contacter le Support"
+  },
+  "errors": {
+    "404": {
+      "title": "Page Non Trouvée",
+      "description": "La page que vous recherchez n'existe pas. Vérifiez l'URL ou revenez à la page d'accueil."
+    },
+    "500": {
+      "title": "Erreur Interne du Serveur",
+      "description": "Un problème est survenu de notre côté. Veuillez réessayer plus tard ou contacter le support."
+    }
+  }
+}
